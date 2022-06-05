@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C343CA26284D220C0004D722 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CA25284D220C0004D722 /* ViewModifiers.swift */; };
+		C343CA28284D22640004D722 /* ModifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CA27284D22640004D722 /* ModifierExtensions.swift */; };
+		C3A8370B284CE71B00C4A6C2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8370A284CE71B00C4A6C2 /* Launch Screen.storyboard */; };
+		C3A83710284CE7B900C4A6C2 /* FlagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8370F284CE7B900C4A6C2 /* FlagImage.swift */; };
+		C3A83712284D1B0E00C4A6C2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A83711284D1B0E00C4A6C2 /* ContentViewModel.swift */; };
+		C3A83714284D1B5D00C4A6C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A83713284D1B5D00C4A6C2 /* Constants.swift */; };
 		C3ADC73F2815675F00C0A2BF /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADC73E2815675F00C0A2BF /* GuessTheFlagApp.swift */; };
 		C3ADC7412815675F00C0A2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADC7402815675F00C0A2BF /* ContentView.swift */; };
 		C3ADC7432815676000C0A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ADC7422815676000C0A2BF /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C343CA25284D220C0004D722 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		C343CA27284D22640004D722 /* ModifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierExtensions.swift; sourceTree = "<group>"; };
+		C3A8370A284CE71B00C4A6C2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3A8370F284CE7B900C4A6C2 /* FlagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImage.swift; sourceTree = "<group>"; };
+		C3A83711284D1B0E00C4A6C2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C3A83713284D1B5D00C4A6C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3ADC73B2815675F00C0A2BF /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ADC73E2815675F00C0A2BF /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		C3ADC7402815675F00C0A2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3A8370C284CE72200C4A6C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADC7402815675F00C0A2BF /* ContentView.swift */,
+				C3A8370A284CE71B00C4A6C2 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3A8370D284CE74500C4A6C2 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8370F284CE7B900C4A6C2 /* FlagImage.swift */,
+				C3A83711284D1B0E00C4A6C2 /* ContentViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C3A8370E284CE78700C4A6C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A83713284D1B5D00C4A6C2 /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3A83715284D1F4900C4A6C2 /* Modifiers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C343CA25284D220C0004D722 /* ViewModifiers.swift */,
+				C343CA27284D22640004D722 /* ModifierExtensions.swift */,
+			);
+			path = "Modifiers and Extensions";
+			sourceTree = "<group>";
+		};
 		C3ADC7322815675F00C0A2BF = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				C3ADC73E2815675F00C0A2BF /* GuessTheFlagApp.swift */,
-				C3ADC7402815675F00C0A2BF /* ContentView.swift */,
+				C3A8370C284CE72200C4A6C2 /* Views */,
+				C3A8370E284CE78700C4A6C2 /* Models */,
+				C3A8370D284CE74500C4A6C2 /* View Models */,
+				C3A83715284D1F4900C4A6C2 /* Modifiers and Extensions */,
 				C3ADC7422815676000C0A2BF /* Assets.xcassets */,
 				C3ADC7442815676000C0A2BF /* Preview Content */,
 			);
@@ -125,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A8370B284CE71B00C4A6C2 /* Launch Screen.storyboard in Resources */,
 				C3ADC7462815676000C0A2BF /* Preview Assets.xcassets in Resources */,
 				C3ADC7432815676000C0A2BF /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A83714284D1B5D00C4A6C2 /* Constants.swift in Sources */,
+				C3A83712284D1B0E00C4A6C2 /* ContentViewModel.swift in Sources */,
+				C343CA28284D22640004D722 /* ModifierExtensions.swift in Sources */,
+				C343CA26284D220C0004D722 /* ViewModifiers.swift in Sources */,
 				C3ADC7412815675F00C0A2BF /* ContentView.swift in Sources */,
+				C3A83710284CE7B900C4A6C2 /* FlagImage.swift in Sources */,
 				C3ADC73F2815675F00C0A2BF /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -303,6 +360,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
